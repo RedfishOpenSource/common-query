@@ -10,11 +10,11 @@ public class EntityInfo implements Serializable {
     // 实体编码
     private String entityCode;
 
-    public String getResource() {
+    public String getEntityCode() {
         return entityCode;
     }
 
-    public void setResource(String resource) {
-        this.entityCode = resource;
+    public void setEntityCode(String entityCode) {
+        this.entityCode = entityCode;
     }
 }
