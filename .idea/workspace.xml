@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/delete/DataDeleteFieldInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/delete/DataDeleteParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/insert/DataInsertFieldInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/insert/DataInsertParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/insert/DataInsertRowInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/update/DataUpdateFieldInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/update/DataUpdateParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/DeleteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/InsertService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/UpdateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/EntityInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/EntityInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/resources/temp.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
