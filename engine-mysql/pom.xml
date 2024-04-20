@@ -4,10 +4,20 @@
     <parent>
         <groupId>com.redfish.common-query</groupId>
         <artifactId>common-query</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
-    <groupId>org.example</groupId>
+
+
     <artifactId>engine-mysql</artifactId>
-    <name>Archetype - engine-mysql</name>
-    <url>http://maven.apache.org</url>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+
 </project>
