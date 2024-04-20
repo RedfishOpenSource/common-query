@@ -6,17 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rule-exp-client" />
-        <module name="rule-exp-common-query" />
-        <module name="rule-exp-domain" />
-        <module name="rule-exp-common-command" />
-        <module name="rule-exp-spring-boot-starter" />
-        <module name="start" />
-        <module name="rule-exp-infrastructure" />
-        <module name="rule-exp-adapter" />
-        <module name="rule-exp-app" />
-        <module name="rule-exp-common-dto" />
-        <module name="rule-exp-common-util" />
+        <module name="engine-mysql" />
+        <module name="model" />
       </profile>
     </annotationProcessing>
   </component>

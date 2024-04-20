@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/QueryCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/CountQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/PageQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/QueryOneParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/result/QueryResultFieldData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/result/QueryResultListData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/result/QueryResultRowData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/microservice-demo-adapter1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/common/dto/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/common/util/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/job/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/listener/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/rpc/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/web/config/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/web/page/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-adapter/src/main/java/com/redfish/rule/exp/adapter/web/rest/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/common/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/CustomerServiceI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/assembler/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/dto/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/executor/CustomerAddCmdExe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/main/java/com/redfish/rule/exp/app/customer/param/CustomerAddCmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-app/src/test/java/com/redfish/rule/exp/adapter/app/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-client/src/main/java/com/redfish/rule/exp/client/common/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-client/src/main/java/com/redfish/rule/exp/client/moduleA/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-command/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-command/src/main/java/com/redfish/rule/exp/common/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/src/main/java/com/redfish/rule/exp/common/dto/DTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/src/main/java/com/redfish/rule/exp/common/dto/MultiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/src/main/java/com/redfish/rule/exp/common/dto/PageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/src/main/java/com/redfish/rule/exp/common/dto/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-dto/src/main/java/com/redfish/rule/exp/common/dto/SingleResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/ConditionInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/MultiQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/PageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/PageQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/SingleQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/src/main/java/com/redfish/rule/exp/common/query/SortInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/ConditionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/MultiQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/PageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/PageQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/SingleQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-query/target/classes/com/redfish/rule/exp/common/query/SortInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/enums/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/middleware/distributionlock/DistributeLockGetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/middleware/eventpublisher/BaseDomainEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/middleware/eventpublisher/CustomizableThreadFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/middleware/eventpublisher/EventPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/middleware/eventpublisher/EventTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/util/collection/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/util/juc/ExecutorServiceEnhancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-common/rule-exp-common-util/src/main/java/com/redfish/rule/exp/common/util/util/juc/ThreadPoolBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/common/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/common/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/common/ExpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/common/CommonQueryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/constans/ConditionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/constans/ConditionTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/constans/SortConditionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/constans/SortConditionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/QueryExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/QueryExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/EmptySelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/EmptySelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/EmptyWhere.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/EmptyWhere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/From.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/From.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/Limit.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/Limit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/OrderBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/OrderBy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/Select.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/Select.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/dsl/base/Where.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/dsl/base/Where.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/PageRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/ResourceRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/EntityInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/RuleExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/SortRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SortInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/TargetAttributesRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SelectField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/AndRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/ConditionRuleExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/ConstExpRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/ConstExpRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/NotRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/OrRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Or.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/SingleConditionRuleExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/SingleQueryCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/exp/condition/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/model/result/QueryResultItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/service/ConditionMatchService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/service/CountQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/CountQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/service/PageQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/PageQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/main/java/com/redfish/rule/exp/domain/service/QueryOneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/QueryOneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/src/test/java/com/redfish/rule/exp/adapter/domain/CustomerEntityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/common/ErrorCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/common/ExpException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/constans/ConditionEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/constans/SortConditionEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/QueryExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/EmptySelect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/EmptyWhere.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/From.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/Init.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/Limit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/OrderBy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/Select.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/dsl/base/Where.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/PageRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/ResourceRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/RuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/SortRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/TargetAttributesRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/AndRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/ConditionRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/ConstExpRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/NotRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/OrRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/exp/condition/SingleConditionRuleExp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/model/result/QueryResultItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/service/ConditionMatchService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/service/CountQueryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/service/PageQueryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-domain/target/classes/com/redfish/rule/exp/domain/service/QueryOneService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/main/java/com/redfish/rule/exp/infrastructure/dal/config/MybatisConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/main/resources/META-INF/services/util.juc.ExecutorServiceEnhancer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/main/resources/sql/demo.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/test/java/com/redfish/rule/exp/infrastructure/dependency/mapstruct/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/test/java/com/redfish/rule/exp/infrastructure/dependency/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/test/java/com/redfish/rule/exp/infrastructure/repository/CustomerMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/test/java/com/redfish/rule/exp/infrastructure/util/io/ClassLoaderIOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-infrastructure/src/test/resources/sample.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-spring-boot-starter/READEME.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-spring-boot-starter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-spring-boot-starter/src/main/java/com/redfish/rule/exp/starter/DemoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule-exp-spring-boot-starter/src/main/java/com/redfish/rule/exp/starter/EnableDemoAutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/redfish/rule/exp/start/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/engine-mysql/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/test/java/com/redfish/rule/exp/start/TempTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/test/resources/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/test/resources/test.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2fMu5XXyBRVV81pW8lQaXeSwo8z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/pc/Desktop/gitee-note/OpenSource/common-query/model/src/main/java/com/redfish/common/query/model"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\gitee-note\OpenSource\common-query\model\src\main\java\com\redfish\common\query\model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="" />
+      <created>1713623085896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713623085896</updated>
+    </task>
+    <servers />
+  </component>
+</project>
