@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/resources/temp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/pc/Desktop/gitee-note/OpenSource/common-query/model/src/main/java/com/redfish/common/query/model"
+    "last_opened_file_path": "C:/Users/pc/Desktop/gitee-note/OpenSource/redfish-components"
   }
 }]]></component>
   <component name="RecentsManager">
