@@ -54,9 +54,9 @@ public enum ConditionTypeEnum {
 
 
 
-    IS_EMPTY("is_empty", "为空"),
+    IS_EMPTY("is_empty", "字符串为空"),
 
-    IS_NOT_EMPTY("is_not_empty", "不为空")
+    IS_NOT_EMPTY("is_not_empty", "字符串不为空")
 
 
     ;

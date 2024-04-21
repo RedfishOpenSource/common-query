@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="" />
+    <list default="true" id="c5af13f0-1d8f-4f84-8c21-2dfc8b7ce220" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/redfish/common/query/demo/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/consts/ConditionParseConsts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/consts/MysqlConditionSymbolEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/entity/FieldColumnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/ParseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/SqlQueryParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/AndConditionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/ConditionParseExe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/ConditionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/NotConditionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/OrConditionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/parse/condition/SingleQueryConditionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/service/EntityDaoInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/service/EntityDaoInfoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/service/ResultMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-mysql/src/main/java/com/redfish/common/query/engine/mysql/service/pagequery/PageQueryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/constans/FieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-mysql/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/engine-mysql/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-mysql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/constans/ConditionTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/constans/ConditionTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Or.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/Or.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/QueryCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/QueryCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/SingleQueryCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/condition/SingleQueryCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/CountQueryParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/CountQueryParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SelectField.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SelectField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SortInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/model/param/SortInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/PageQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/redfish/common/query/model/service/PageQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -42,7 +80,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/pc/Desktop/gitee-note/OpenSource/redfish-components"
+    "last_opened_file_path": "C:/Users/pc/Desktop/gitee-note/OpenSource/redfish-components",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">

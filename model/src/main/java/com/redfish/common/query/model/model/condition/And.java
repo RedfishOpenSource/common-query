@@ -1,8 +1,11 @@
 package com.redfish.common.query.model.model.condition;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
+
 import java.util.LinkedList;
 import java.util.List;
 
+@JsonTypeName("And")
 public class And extends QueryCondition {
 
     /**

@@ -1,7 +1,9 @@
 package com.redfish.common.query.model.model.condition;
 
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
+@JsonTypeName("Not")
 public class Not extends QueryCondition {
 
     /**

@@ -1,5 +1,7 @@
 package com.redfish.common.query.model.model.param;
 
+import com.redfish.common.query.model.constans.FieldType;
+
 import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,14 +11,39 @@ import java.util.List;
  */
 public class SelectField implements Serializable {
 
-    private final List<String> fieldCodes = new LinkedList<>();
+    private String entityCode;
 
-    public List<String> getTargetAttributes() {
-        return fieldCodes;
+    /**
+     * 字段编码
+     */
+    private String fieldCode;
+
+    /**
+     * 字段类型
+     */
+    private FieldType fieldType;
+
+    public String getFieldCode() {
+        return fieldCode;
     }
 
-    public void addFieldCode(String fieldCode) {
-        this.fieldCodes.add(fieldCode);
+    public void setFieldCode(String fieldCode) {
+        this.fieldCode = fieldCode;
     }
 
+    public FieldType getFieldType() {
+        return fieldType;
+    }
+
+    public void setFieldType(FieldType fieldType) {
+        this.fieldType = fieldType;
+    }
+
+    public String getEntityCode() {
+        return entityCode;
+    }
+
+    public void setEntityCode(String entityCode) {
+        this.entityCode = entityCode;
+    }
 }

@@ -2,7 +2,8 @@ package com.redfish.common.query.model.service;
 
 
 import com.redfish.common.query.model.model.param.PageQueryParam;
-import com.redfish.common.query.model.model.result.QueryResultRowData;
+import com.redfish.common.query.model.model.result.QueryResultListData;
+
 
 public interface PageQueryService {
 
@@ -12,6 +13,6 @@ public interface PageQueryService {
      * @param pageQueryParam
      * @return
      */
-    QueryResultRowData page(PageQueryParam pageQueryParam);
+    QueryResultListData page(PageQueryParam pageQueryParam);
 
 }

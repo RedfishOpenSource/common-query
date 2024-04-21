@@ -38,4 +38,9 @@ public class PageInfo implements Serializable {
         }
         this.pageSize = pageSize;
     }
+
+    public Integer getOffset(){
+        return (pageNum-1)*pageSize;
+    }
+
 }

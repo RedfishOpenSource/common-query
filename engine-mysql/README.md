@@ -1,3 +1,14 @@
+### 接入方式
+本模块基于SpringBoot方式，在application.properties进行以下配置
+spring.datasource.url=jdbc:mysql://localhost:3306/DemoDatabase?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+
+### 设计思路
+
 引擎层。
 将model层的数据转换成SQL进行执行。
 

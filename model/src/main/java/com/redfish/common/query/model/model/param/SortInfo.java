@@ -12,6 +12,11 @@ import java.io.Serializable;
 public class SortInfo implements Serializable {
 
     /**
+     * entityCode
+     */
+    private String entityCode;
+
+    /**
      * 目标资源属性code
      */
     private String fieldCode;
@@ -26,4 +31,35 @@ public class SortInfo implements Serializable {
      */
     private Integer sortNum;
 
+    public String getFieldCode() {
+        return fieldCode;
+    }
+
+    public void setFieldCode(String fieldCode) {
+        this.fieldCode = fieldCode;
+    }
+
+    public SortConditionEnum getSortConditionEnum() {
+        return sortConditionEnum;
+    }
+
+    public void setSortConditionEnum(SortConditionEnum sortConditionEnum) {
+        this.sortConditionEnum = sortConditionEnum;
+    }
+
+    public Integer getSortNum() {
+        return sortNum;
+    }
+
+    public void setSortNum(Integer sortNum) {
+        this.sortNum = sortNum;
+    }
+
+    public String getEntityCode() {
+        return entityCode;
+    }
+
+    public void setEntityCode(String entityCode) {
+        this.entityCode = entityCode;
+    }
 }
