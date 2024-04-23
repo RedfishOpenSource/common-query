@@ -6,6 +6,7 @@ import com.redfish.common.query.engine.mysql.service.EntityDaoInfo;
 import com.redfish.common.query.model.constans.FieldType;
 import com.redfish.common.query.model.model.param.*;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.util.Comparator;
@@ -68,8 +69,7 @@ public class SqlQueryParse {
 
        // 条件信息
        ParseResult conditionParseResult = conditionParseExe.parse(pageQueryParam.getQueryCondition());
-       sqlBuilder.append(" where ");
-       sqlBuilder.append(conditionParseResult.getConditionSqlTemplate());
+       sqlBuilder.append(conditionParseResult.buildWhereInfo());
        parseResult.addParam(conditionParseResult.getParams());
 
        sqlBuilder.append(addSorInfo(pageQueryParam.getSortInfos()));
@@ -93,6 +93,10 @@ public class SqlQueryParse {
 
 
     private String addSorInfo(List<SortInfo> sortInfos) {
+        if (CollectionUtils.isEmpty(sortInfos)){
+            return "";
+        }
+
        sortInfos = sortInfos.stream().sorted(Comparator.comparingInt(SortInfo::getSortNum)).collect(Collectors.toList());
 
        String entityCode = sortInfos.get(0).getEntityCode();
@@ -126,6 +130,10 @@ public class SqlQueryParse {
      * @param pageInfo
      */
     private String addPageInfo(PageInfo pageInfo) {
+        if (null == pageInfo){
+            return "";
+        }
+
         StringBuilder sqlBuilder = new StringBuilder();
 
         sqlBuilder.append(" limit ");

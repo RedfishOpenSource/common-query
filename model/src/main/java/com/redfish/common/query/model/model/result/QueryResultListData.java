@@ -13,4 +13,8 @@ public class QueryResultListData implements Serializable {
         return this;
     }
 
+    public List<QueryResultRowData> getDataRows() {
+        return dataRows;
+    }
+
 }

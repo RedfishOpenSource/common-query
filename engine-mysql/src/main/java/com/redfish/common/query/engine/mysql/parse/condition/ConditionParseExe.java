@@ -17,8 +17,12 @@ public class ConditionParseExe {
 
 
     public ParseResult parse(QueryCondition queryCondition) {
-        BizScenario.valueOf(ConditionParseConsts.BIZ_Id, ConditionParseConsts.USE_CASE, queryCondition.getClass().getName());
-        return extensionExecutor.execute(ConditionParser.class, null,
+        if (queryCondition == null){
+            return new ParseResult();
+        }
+
+        BizScenario bizScenario = BizScenario.valueOf(ConditionParseConsts.BIZ_Id, ConditionParseConsts.USE_CASE, queryCondition.getClass().getName());
+        return extensionExecutor.execute(ConditionParserExtPt.class, bizScenario,
                 ex -> ex.parse(queryCondition));
     }
 

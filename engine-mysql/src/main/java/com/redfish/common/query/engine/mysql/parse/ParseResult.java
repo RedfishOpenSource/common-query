@@ -1,5 +1,7 @@
 package com.redfish.common.query.engine.mysql.parse;
 
+import org.springframework.util.StringUtils;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,25 +19,36 @@ public class ParseResult {
     private final List<Object> params = new LinkedList<>();
 
 
+
+
     public ParseResult addParam(Object param) {
         if (param == null){
             return this;
         }
 
-        if (param instanceof Iterator){
-            while (((Iterator) param).hasNext()){
-                params.add(((Iterator) param).next());
+
+        if (param instanceof Iterable){
+            Iterator iterator = ((Iterable)param).iterator();
+            while (iterator.hasNext()){
+                params.add(iterator.next());
             }
         }else{
             params.add(param);
         }
-        params.add(param);
         return this;
     }
 
 
     public StringBuilder getConditionSqlTemplate() {
         return conditionSqlTemplate;
+    }
+
+    public String buildWhereInfo(){
+        if (StringUtils.hasText(conditionSqlTemplate)){
+            conditionSqlTemplate.insert(0," where ");
+        }
+
+        return conditionSqlTemplate.toString();
     }
 
     public List<Object> getParams() {

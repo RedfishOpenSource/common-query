@@ -14,7 +14,17 @@ public class EntityInfo implements Serializable {
         return entityCode;
     }
 
-    public void setEntityCode(String entityCode) {
+    private EntityInfo() {
+    }
+
+    public static EntityInfo of(String entityCode) {
+        EntityInfo entityInfo = new EntityInfo();
+        entityInfo.setEntityCode(entityCode);
+        return entityInfo;
+    }
+
+    public EntityInfo setEntityCode(String entityCode) {
         this.entityCode = entityCode;
+        return this;
     }
 }

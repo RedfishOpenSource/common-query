@@ -19,4 +19,8 @@ public class QueryResultRowData implements Serializable {
                 .findFirst().orElse(null);
     }
 
+    public List<QueryResultFieldData> getQueryResultFieldData() {
+        return queryResultFieldData;
+    }
+
 }

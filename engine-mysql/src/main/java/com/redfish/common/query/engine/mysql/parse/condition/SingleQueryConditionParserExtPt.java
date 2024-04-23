@@ -7,14 +7,12 @@ import com.redfish.common.query.engine.mysql.parse.ParseResult;
 import com.redfish.common.query.engine.mysql.service.EntityDaoInfo;
 import com.redfish.common.query.model.constans.ConditionTypeEnum;
 import com.redfish.common.query.model.model.condition.SingleQueryCondition;
-import org.springframework.stereotype.Component;
 import com.redfish.common.query.engine.mysql.consts.ConditionParseConsts;
 
 import javax.annotation.Resource;
 
-@Component
 @Extension(bizId = ConditionParseConsts.BIZ_Id,useCase = ConditionParseConsts.USE_CASE,scenario = "SingleQueryCondition")
-public class SingleQueryConditionParser implements ConditionParser<SingleQueryCondition>{
+public class SingleQueryConditionParserExtPt implements ConditionParserExtPt<SingleQueryCondition> {
 
     @Resource
     private EntityDaoInfo entityDaoInfo;
