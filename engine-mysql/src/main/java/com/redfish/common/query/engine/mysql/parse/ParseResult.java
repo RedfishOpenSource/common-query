@@ -1,5 +1,6 @@
 package com.redfish.common.query.engine.mysql.parse;
 
+import org.slf4j.Logger;
 import org.springframework.util.StringUtils;
 
 import java.util.Iterator;
@@ -56,9 +57,14 @@ public class ParseResult {
     }
 
     public String getSql(){
-        String sqlTemplate = conditionSqlTemplate.toString().replace("?","%s");
+        String sqlTemplate = conditionSqlTemplate.toString().replace("?","'%s'");
         String sql = String.format(sqlTemplate,this.params.toArray());
         return sql;
+    }
+
+    public void log(Logger LOGGER){
+        LOGGER.info("sqlStringBuilder:{},params:{}",conditionSqlTemplate,params);
+        LOGGER.info("executeSQL:{}",this.getSql());
     }
 
 }

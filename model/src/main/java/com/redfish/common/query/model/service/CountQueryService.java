@@ -11,6 +11,6 @@ public interface CountQueryService {
      * @param countQueryParam
      * @return
      */
-    Long count(CountQueryParam countQueryParam);
+    Integer count(CountQueryParam countQueryParam);
 
 }

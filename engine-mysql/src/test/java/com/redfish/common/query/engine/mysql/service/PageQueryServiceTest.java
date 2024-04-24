@@ -1,4 +1,4 @@
-package com.redfish.common.query.engine.mysql;
+package com.redfish.common.query.engine.mysql.service;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;

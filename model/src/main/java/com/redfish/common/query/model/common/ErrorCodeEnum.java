@@ -9,7 +9,10 @@ public enum ErrorCodeEnum {
     /**
      * 数据已存在
      */
-    PARAM_ERROR("paramError","参数异常");
+    PARAM_ERROR("paramError","参数异常"),
+
+    QUERY_RESULT_ERROR("queryResultError","查询结果异常")
+    ;
 
 
     /**

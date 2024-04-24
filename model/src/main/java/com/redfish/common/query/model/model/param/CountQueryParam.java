@@ -10,6 +10,10 @@ public class CountQueryParam implements Serializable {
 
     private QueryCondition queryCondition;
 
+    public static CountQueryParam of() {
+        return new CountQueryParam();
+    }
+
     public EntityInfo getEntityInfo() {
         return entityInfo;
     }
@@ -18,11 +22,17 @@ public class CountQueryParam implements Serializable {
         this.entityInfo = entityInfo;
     }
 
+    public CountQueryParam setEntityInfo(String entityCode) {
+        this.entityInfo = EntityInfo.of(entityCode);
+        return this;
+    }
+
     public QueryCondition getQueryCondition() {
         return queryCondition;
     }
 
-    public void setQueryCondition(QueryCondition queryCondition) {
+    public CountQueryParam setQueryCondition(QueryCondition queryCondition) {
         this.queryCondition = queryCondition;
+        return this;
     }
 }
