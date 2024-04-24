@@ -5,6 +5,7 @@ import com.redfish.common.query.engine.mysql.consts.ConditionParseConsts;
 import com.redfish.common.query.engine.mysql.parse.ParseResult;
 import com.redfish.common.query.model.model.condition.And;
 import com.redfish.common.query.model.model.condition.QueryCondition;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -28,6 +29,10 @@ public class AndConditionParserExtPt implements ConditionParserExtPt<And> {
         for(int i=0;i<children.size();i++){
             QueryCondition queryCondition = children.get(i);
             ParseResult parseResultItem = conditionParseExe.parse(queryCondition);
+            if (!StringUtils.hasText(parseResultItem.getConditionSqlTemplate().toString())){
+                continue;
+            }
+
 
             // SQL合并
             if (i != 0){

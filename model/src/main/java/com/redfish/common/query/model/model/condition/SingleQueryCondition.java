@@ -11,7 +11,7 @@ import java.util.List;
 @JsonTypeName("Single")
 public class SingleQueryCondition extends QueryCondition {
 
-    private String entityCode;
+
 
 
     /**
@@ -31,36 +31,39 @@ public class SingleQueryCondition extends QueryCondition {
      */
     private Object value;
 
+    public static SingleQueryCondition of(String fieldCode){
+        SingleQueryCondition singleQueryCondition = new SingleQueryCondition();
+        singleQueryCondition.setFieldCode(fieldCode);
+        return singleQueryCondition;
+    }
+
 
     public String getFieldCode() {
         return fieldCode;
     }
 
-    public void setFieldCode(String fieldCode) {
+    public SingleQueryCondition setFieldCode(String fieldCode) {
         this.fieldCode = fieldCode;
+        return this;
     }
 
     public ConditionTypeEnum getConditionType() {
         return conditionType;
     }
 
-    public void setConditionType(ConditionTypeEnum conditionType) {
+    public SingleQueryCondition setConditionType(ConditionTypeEnum conditionType) {
         this.conditionType = conditionType;
+        return this;
     }
 
     public Object getValue() {
         return value;
     }
 
-    public void setValue(Object value) {
+    public SingleQueryCondition setValue(Object value) {
         this.value = value;
+        return this;
     }
 
-    public String getEntityCode() {
-        return entityCode;
-    }
 
-    public void setEntityCode(String entityCode) {
-        this.entityCode = entityCode;
-    }
 }

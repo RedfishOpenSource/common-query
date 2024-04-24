@@ -1,7 +1,6 @@
-package com.redfish.common.query.engine.mysql.service;
+package com.redfish.common.query.engine.mysql.entity;
 
 import com.redfish.common.query.engine.mysql.entity.FieldColumnInfo;
-import com.redfish.common.query.model.model.param.EntityInfo;
 
 import java.util.List;
 

@@ -4,7 +4,7 @@ import com.alibaba.cola.extension.Extension;
 import com.redfish.common.query.engine.mysql.consts.MysqlConditionSymbolEnum;
 import com.redfish.common.query.engine.mysql.entity.FieldColumnInfo;
 import com.redfish.common.query.engine.mysql.parse.ParseResult;
-import com.redfish.common.query.engine.mysql.service.EntityDaoInfo;
+import com.redfish.common.query.engine.mysql.entity.EntityDaoInfo;
 import com.redfish.common.query.model.constans.ConditionTypeEnum;
 import com.redfish.common.query.model.model.condition.SingleQueryCondition;
 import com.redfish.common.query.engine.mysql.consts.ConditionParseConsts;
@@ -26,16 +26,18 @@ public class SingleQueryConditionParserExtPt implements ConditionParserExtPt<Sin
         String fieldCode = singleQueryCondition.getFieldCode();
         FieldColumnInfo fieldColumnInfo = entityDaoInfo.getFieldInfo(singleQueryCondition.getEntityCode(),fieldCode);
         String columnName = fieldColumnInfo.getColumnName();
-
-        // 收集参数
         ConditionTypeEnum conditionTypeEnum = singleQueryCondition.getConditionType();
+
+
         Object value = singleQueryCondition.getValue();
-        parseResult.addParam(value);
 
         // 构建SQL
         MysqlConditionSymbolEnum mysqlConditionSymbolEnum = MysqlConditionSymbolEnum.valueOf(conditionTypeEnum);
         String sqlTemplate = mysqlConditionSymbolEnum.buildSql(columnName,value);
         conditionSqlTemplate.append(sqlTemplate);
+
+        // 收集参数
+        parseResult.addParam(mysqlConditionSymbolEnum.valueConvert(value));
 
         return parseResult;
     }

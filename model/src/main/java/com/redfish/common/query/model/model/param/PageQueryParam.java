@@ -4,6 +4,7 @@ import com.redfish.common.query.model.model.condition.QueryCondition;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PageQueryParam implements Serializable {
@@ -41,7 +42,7 @@ public class PageQueryParam implements Serializable {
         return queryCondition;
     }
 
-    public PageQueryParam queryCondition(QueryCondition queryCondition) {
+    public PageQueryParam setQueryCondition(QueryCondition queryCondition) {
         this.queryCondition = queryCondition;
         return this;
     }
@@ -50,12 +51,12 @@ public class PageQueryParam implements Serializable {
         return selectFields;
     }
 
-    public PageQueryParam selectFields(List<SelectField> selectFields) {
+    public PageQueryParam setSelectFields(List<SelectField> selectFields) {
         this.selectFields = selectFields;
         return this;
     }
 
-    public PageQueryParam selectFields(String... selectFieldCodes) {
+    public PageQueryParam setSelectFields(String... selectFieldCodes) {
         if (null != selectFieldCodes){
             for (String selectFieldCode : selectFieldCodes) {
                 SelectField selectField = SelectField.of(selectFieldCode)
@@ -66,7 +67,7 @@ public class PageQueryParam implements Serializable {
         return this;
     }
 
-    public PageQueryParam selectFields(SelectField... selectFields) {
+    public PageQueryParam setSelectFields(SelectField... selectFields) {
         if (null != selectFields){
             for (SelectField selectField : selectFields) {
                 selectField.setEntityCode(this.entityInfo.getEntityCode());
@@ -80,7 +81,13 @@ public class PageQueryParam implements Serializable {
         return sortInfos;
     }
 
-    public PageQueryParam sortInfos(List<SortInfo> sortInfos) {
+    public PageQueryParam setSortInfos(SortInfo... sortInfos) {
+        this.setSortInfos(Arrays.asList(sortInfos));
+        return this;
+    }
+
+    public PageQueryParam setSortInfos(List<SortInfo> sortInfos) {
+        sortInfos.forEach(sortInfo -> sortInfo.setEntityCode(this.entityInfo.getEntityCode()));
         this.sortInfos = sortInfos;
         return this;
     }
@@ -89,7 +96,12 @@ public class PageQueryParam implements Serializable {
         return pageInfo;
     }
 
-    public PageQueryParam pageInfo(PageInfo pageInfo) {
+    public PageQueryParam setPageInfo(Integer pageNum, Integer pageSize) {
+        this.pageInfo = PageInfo.of(pageNum, pageSize);
+        return this;
+    }
+
+    public PageQueryParam setPageInfo(PageInfo pageInfo) {
         this.pageInfo = pageInfo;
         return this;
     }

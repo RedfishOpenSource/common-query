@@ -1,15 +1,15 @@
 package com.redfish.common.query.engine.mysql.service.pagequery;
 
-import com.redfish.common.query.engine.mysql.parse.ParseResult;
 import com.redfish.common.query.engine.mysql.parse.SqlQueryParse;
-import com.redfish.common.query.engine.mysql.service.ResultMapper;
+import com.redfish.common.query.engine.mysql.ResultMapper;
+import com.redfish.common.query.engine.mysql.parse.ParseResult;
 import com.redfish.common.query.model.model.param.PageQueryParam;
 import com.redfish.common.query.model.model.param.SelectField;
 import com.redfish.common.query.model.model.result.QueryResultListData;
-import com.redfish.common.query.model.model.result.QueryResultRowData;
 import com.redfish.common.query.model.service.PageQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import org.springframework.stereotype.Component;
@@ -34,6 +34,9 @@ public class PageQueryServiceImpl implements PageQueryService {
     @Resource
     private ResultMapper resultMapper;
 
+    @Value("${common.query.logsql.enable:false}")
+    private Boolean logSqlEnable;
+
     @Override
     public QueryResultListData page(PageQueryParam pageQueryParam) {
 
@@ -43,9 +46,9 @@ public class PageQueryServiceImpl implements PageQueryService {
         StringBuilder sqlStringBuilder = parseResult.getConditionSqlTemplate();
         List<Object> params = parseResult.getParams();
 
-        if (LOGGER.isDebugEnabled()){
-            LOGGER.debug("sqlStringBuilder:{},params:{}",sqlStringBuilder,params);
-            LOGGER.debug("executeSQL:{}",parseResult.getSql());
+        if (null != logSqlEnable && logSqlEnable){
+            LOGGER.info("sqlStringBuilder:{},params:{}",sqlStringBuilder,params);
+            LOGGER.info("executeSQL:{}",parseResult.getSql());
         }
 
         // 2,执行查询

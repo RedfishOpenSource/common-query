@@ -57,7 +57,7 @@ public class ParseResult {
 
     public String getSql(){
         String sqlTemplate = conditionSqlTemplate.toString().replace("?","%s");
-        String sql = String.format(sqlTemplate,this.params);
+        String sql = String.format(sqlTemplate,this.params.toArray());
         return sql;
     }
 

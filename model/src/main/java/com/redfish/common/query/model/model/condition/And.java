@@ -14,6 +14,15 @@ public class And extends QueryCondition {
     private final List<QueryCondition> children = new LinkedList<>();
 
 
+    public static And of(QueryCondition... queryConditions) {
+        And and = new And();
+        for (QueryCondition queryCondition : queryConditions) {
+            and.addChild(queryCondition);
+        }
+        return and;
+    }
+
+
     public List<QueryCondition> getChildren() {
         return children;
     }

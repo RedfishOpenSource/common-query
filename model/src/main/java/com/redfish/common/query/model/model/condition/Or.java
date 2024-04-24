@@ -13,6 +13,13 @@ public class Or extends QueryCondition {
      */
     private final List<QueryCondition> children = new LinkedList<>();
 
+    public static Or of(QueryCondition... queryConditions) {
+        Or or = new Or();
+        for (QueryCondition queryCondition : queryConditions) {
+            or.addChild(queryCondition);
+        }
+        return or;
+    }
 
     public List<QueryCondition> getChildren() {
         return children;

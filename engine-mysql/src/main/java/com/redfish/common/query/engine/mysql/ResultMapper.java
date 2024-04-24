@@ -1,5 +1,6 @@
-package com.redfish.common.query.engine.mysql.service;
+package com.redfish.common.query.engine.mysql;
 
+import com.redfish.common.query.engine.mysql.entity.EntityDaoInfo;
 import com.redfish.common.query.engine.mysql.entity.FieldColumnInfo;
 import com.redfish.common.query.model.model.param.SelectField;
 import com.redfish.common.query.model.model.result.QueryResultFieldData;

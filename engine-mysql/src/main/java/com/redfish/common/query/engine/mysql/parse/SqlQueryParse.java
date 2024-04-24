@@ -2,7 +2,7 @@ package com.redfish.common.query.engine.mysql.parse;
 
 import com.redfish.common.query.engine.mysql.entity.FieldColumnInfo;
 import com.redfish.common.query.engine.mysql.parse.condition.ConditionParseExe;
-import com.redfish.common.query.engine.mysql.service.EntityDaoInfo;
+import com.redfish.common.query.engine.mysql.entity.EntityDaoInfo;
 import com.redfish.common.query.model.constans.FieldType;
 import com.redfish.common.query.model.model.param.*;
 import org.springframework.stereotype.Component;
@@ -38,8 +38,7 @@ public class SqlQueryParse {
 
         // 条件信息
         ParseResult conditionParseResult = conditionParseExe.parse(countQueryParam.getQueryCondition());
-        sqlBuilder.append(" where ");
-        sqlBuilder.append(conditionParseResult.getConditionSqlTemplate());
+        sqlBuilder.append(conditionParseResult.buildWhereInfo());
         parseResult.addParam(conditionParseResult.getParams());
 
 
@@ -50,19 +49,13 @@ public class SqlQueryParse {
    public ParseResult parse(PageQueryParam pageQueryParam) {
        ParseResult parseResult = new ParseResult();
        StringBuilder sqlBuilder = parseResult.getConditionSqlTemplate();
+       sqlBuilder.append("select ");
 
        EntityInfo entityInfo = pageQueryParam.getEntityInfo();
-
        List<SelectField> selectFields = pageQueryParam.getSelectFields();
-       List<String> selectFieldCodes = selectFields.stream()
-               .filter(selectFieldInner -> selectFieldInner.getFieldType() == FieldType.PHYSICAL)
-               .map(SelectField::getFieldCode).collect(Collectors.toList());
-       List<FieldColumnInfo> selectFieldColumnInfos = entityDaoInfo.getFieldInfos(entityInfo.getEntityCode(),selectFieldCodes);
-       List<String> selectColumnFieldCodes = selectFieldColumnInfos.stream().map(FieldColumnInfo::getColumnName).collect(Collectors.toList());
 
        // 查询字段信息
-       sqlBuilder.append("select ");
-       sqlBuilder.append(String.join(",",selectColumnFieldCodes));
+       sqlBuilder.append(addSelectFields(selectFields,entityInfo));
 
        // 表信息
        sqlBuilder.append(addFrom(entityInfo));
@@ -79,6 +72,16 @@ public class SqlQueryParse {
 
        sqlBuilder.append(";");
        return parseResult;
+   }
+
+   private String addSelectFields(List<SelectField> selectFields,EntityInfo entityInfo){
+       List<String> selectFieldCodes = selectFields.stream()
+               .filter(selectFieldInner -> selectFieldInner.getFieldType() == FieldType.PHYSICAL)
+               .map(SelectField::getFieldCode).collect(Collectors.toList());
+       List<FieldColumnInfo> selectFieldColumnInfos = entityDaoInfo.getFieldInfos(entityInfo.getEntityCode(),selectFieldCodes);
+       List<String> selectColumnFieldCodes = selectFieldColumnInfos.stream().map(FieldColumnInfo::getColumnName).collect(Collectors.toList());
+
+       return String.join(",",selectColumnFieldCodes);
    }
 
     private String addFrom(EntityInfo entityInfo) {

@@ -29,7 +29,14 @@ public class SortInfo implements Serializable {
     /**
      * 排序优先级。
      */
-    private Integer sortNum;
+    private Integer sortNum = 0;
+
+    public static SortInfo of(String fieldCode, SortConditionEnum sortConditionEnum) {
+        SortInfo sortInfo = new SortInfo();
+        sortInfo.setFieldCode(fieldCode);
+        sortInfo.setSortConditionEnum(sortConditionEnum);
+        return sortInfo;
+    }
 
     public String getFieldCode() {
         return fieldCode;

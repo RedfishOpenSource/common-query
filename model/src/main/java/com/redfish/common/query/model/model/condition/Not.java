@@ -11,13 +11,16 @@ public class Not extends QueryCondition {
      */
     private final QueryCondition subQueryCondition;
 
+
+    public static Not of(QueryCondition subQueryCondition) {
+        return new Not(subQueryCondition);
+    }
+
     public Not(QueryCondition subQueryCondition) {
         this.subQueryCondition = subQueryCondition;
     }
 
-    public static Not not(QueryCondition subQueryCondition) {
-        return new Not(subQueryCondition);
-    }
+
 
     public QueryCondition getSubCondition() {
         return subQueryCondition;

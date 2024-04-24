@@ -1,16 +1,15 @@
-package com.redfish.common.query.engine.mysql.service;
+package com.redfish.common.query.engine.mysql.entity;
 
-import com.redfish.common.query.engine.mysql.entity.FieldColumnInfo;
-import com.redfish.common.query.model.constans.FieldType;
-import com.redfish.common.query.model.model.param.EntityInfo;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 
+@ConditionalOnProperty(name = "common.query.entity.dao.strategy",havingValue = "default", matchIfMissing = true)
 @Component
-public class EntityDaoInfoImpl implements EntityDaoInfo{
+public class DefaultEntityDaoInfoImpl implements EntityDaoInfo{
 
 
     @Override

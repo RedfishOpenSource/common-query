@@ -17,6 +17,13 @@ public class PageInfo implements Serializable {
 
     private Integer pageSize = 20;
 
+    public static PageInfo of(Integer pageNum, Integer pageSize) {
+        PageInfo pageInfo = new PageInfo();
+        pageInfo.setPageNum(pageNum);
+        pageInfo.setPageSize(pageSize);
+        return pageInfo;
+    }
+
     public Integer getPageNum() {
         return pageNum;
     }
