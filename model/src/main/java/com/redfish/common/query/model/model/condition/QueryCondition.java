@@ -1,10 +1,8 @@
 package com.redfish.common.query.model.model.condition;
 
 
-import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import javafx.scene.shape.Circle;
 
 import java.io.Serializable;
 
